@@ -20,10 +20,10 @@ Software :
 - Proteus (.pdgprj ile)
 
 quick simulation :
-1. open and run proteus file.
-2. doubleclick on the arduino picture.
-3. input the hex file in to arduino.
-4. run the simulation.
+1. buka dan jalankan file proteus.
+2. doubleclick pada gambar arduino.
+3. input file hex kedalam arduino.
+4. run simulation.
 
 the rule of the button :
 
