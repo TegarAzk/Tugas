@@ -24,7 +24,7 @@ void loop() {
 
 void Intrupt() {
   count++;
-  if(digitalRead(IntPin) == HIGH && count = 2) {
+  if(digitalRead(IntPin) == HIGH && count == 2) {
     blink();
     count = 0;
   }
