@@ -1,4 +1,19 @@
 Digital clock
+- Menampilkan jam, menit dan detik
+- Tampilan mode 1: menit & detik
+- Tampilan mode 2: jam
+- Optional: menampilkan tanggal (Tidak)
+- Prosesor: Atmega328, bisa pakai Arduino Nano atau Arduino UNO
+- Display LED 7 segment, 4 digit.
+- Ada fitur alarm
+- Tidak wajib pakai buzzer, cukup dengan LED saja. 
+- Optional: LED berkedip ketika sedang alarm (Ya)
+- Ada fitur stopwatch
+- Stopwatch tetap berjalan ketika di mode jam
+- Jam tetap berjalan ketika di mode stopwatch
+- Sumber waktu: kristal yang menghasilkan interupsi timer
+- Tombol 2 atau 3 buah.
+- Optional : pakai 1 tombol saja. (Tidak) 
 
 Software :
 - Arduino (.ino and .hex file)
