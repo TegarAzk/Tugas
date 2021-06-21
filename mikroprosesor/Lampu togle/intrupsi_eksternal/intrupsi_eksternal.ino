@@ -24,8 +24,10 @@ void loop() {
 
 void Intrupt() {
   count++;
-  if(digitalRead(IntPin) == HIGH && count == 2) {
-    blink();
+  if(count == 2) {
+    if(digitalRead(IntPin) == HIGH) {
+      blink();
+    }
     count = 0;
   }
   digitalWrite(ledPin, ledState);
