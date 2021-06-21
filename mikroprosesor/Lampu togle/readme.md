@@ -7,6 +7,5 @@ Membuat lampu toggle pada ATmega328 / Arduino dengan model:
 4. wait loop
 5. interupsi external (INTx / PCINTx)
 
-Pengembangan menggunakan:
+Pengembangan menggunakan :
 Arduino IDE
-proteus
