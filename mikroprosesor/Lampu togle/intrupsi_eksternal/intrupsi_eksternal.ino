@@ -1,29 +1,36 @@
 #include <TimerOne.h>
-#include "PinChangeInterrupt.h"
 
 const byte buttonPin = 2;
-const byte pcinPin = 7;
+const byte IntPin = 7;
 const byte ledPin = 13;
 int ledState = LOW;
 int ledOn= LOW;
 int lastButton;
 int currentButton;
+int count = 0;
 
 void setup() {
-  pinMode(pcinPin, INPUT_PULLUP);
+  pinMode(IntPin, INPUT_PULLUP);
   pinMode(buttonPin, INPUT_PULLUP);
   pinMode(ledPin, OUTPUT);
-  Timer1.initialize(1000000);
-  attachPCINT(digitalPinToPCINT(pcinPin), PCint, CHANGE);
+  Timer1.initialize(500000);
+  Timer1.attachInterrupt(Intrupt);
+  currentButton = digitalRead(buttonPin);
 }
 
 void loop() {
   
 }
 
-void PCint() {
-  Timer1.attachInterrupt(blink); // blinkLED to run every 1 seconds
+void Intrupt() {
+  count++;
+  if(digitalRead(IntPin) == HIGH && count = 2) {
+    blink();
+    count = 0;
+  }
+  digitalWrite(ledPin, ledState);
 }
+
 
 void blink() {
   lastButton    = currentButton;
@@ -37,5 +44,4 @@ void blink() {
   else{
     ledState = LOW;  
   }
-  digitalWrite(ledPin, ledState);
 }
