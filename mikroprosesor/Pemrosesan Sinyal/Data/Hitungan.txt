@@ -1,0 +1,11 @@
+anti aliasing
+ 636,9426751592357
+
+reconstruct
+ 3.184,713375796178
+
+Filter digital
+ Fs = 10kHz
+ Fcutoff = 3kHz; 5 kHz; dan 10 kHz
+ b = 1 - e^(2xphixfcuttoff/fs)
+ b = 0,389661; o.207879 ; 0.0432214

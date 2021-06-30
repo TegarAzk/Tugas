@@ -1,0 +1,21 @@
+Circuit: * D:\3_Tugas\S6_Sismik\Tugas_5_6\LT_Spice\Anti-Aliasing-Out.asc
+
+.OP point found by inspection.
+
+Date: Wed Jun 30 09:46:32 2021
+Total elapsed time: 0.039 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 682
+traniter = 682
+tranpoints = 342
+accept = 245
+rejected = 97
+matrix size = 5
+fillins = 0
+solver = Normal
+Matrix Compiler1:       5 opcodes  0.0/[0.0]/0.0
+Matrix Compiler2: 293 bytes object code size  0.0/0.0/[0.0]
+
